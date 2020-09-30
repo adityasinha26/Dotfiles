@@ -1,0 +1,7 @@
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[user]
+	name = adityasinha26
+	email = aditya.sinha@zomato.com
+[alias]
+	graph = log --all --graph --decorate --oneline

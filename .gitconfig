@@ -1,0 +1,27 @@
+[user]
+    name = Aditya Sinha
+    email = adityavikram.sinha26@gmail.com
+[alias]
+    lo = log --oneline
+    f = fetch
+    s = status
+    c = commit
+    ca = commit --amend
+    co = checkout
+    cm = checkout master
+    sl = stash list
+    sa = stash apply
+    sp = stash pop
+    p = push
+    rh = reset --hard
+    pr = pull --rebase
+    b = branch
+    bd = branch -D
+    a = add
+    rv = remote -v
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[core]
+	editor = nvim

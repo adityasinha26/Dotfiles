@@ -1,1 +1,1 @@
-Store for all my configuration dotfiles
+Store for my dotfiles

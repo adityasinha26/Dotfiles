@@ -17,10 +17,7 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/.vim/plugged')
 
-"Utility
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-"Styling
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
 

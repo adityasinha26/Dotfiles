@@ -2,12 +2,11 @@ set nocompatible
 syntax on
 
 set noerrorbells
-set tabstop=4 softtabstop=4
-set shiftwidth=4
+set tabstop=4 shiftwidth=4 expandtab
+set smarttab
 set number
 set relativenumber
 set nowrap
-set smartindent
 set ignorecase
 set smartcase
 set incsearch
@@ -20,7 +19,7 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/.vim/plugged')
 
-" Code Completion
+" Code Completion and LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " File and Keyword fuzzy search
@@ -39,11 +38,13 @@ call plug#end()
 colorscheme gruvbox
 set background=dark
 
+" Moving between buffers
+nnoremap <C-h> <C-w>h
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <C-j> <C-W>j
+
 let mapleader = " "
-nnoremap <leader>h :wincmd h<CR>
-nnoremap <leader>l :wincmd l<CR>
-nnoremap <leader>k :wincmd k<CR>
-nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>t :term<CR>
 nnoremap <leader>o :Files<CR>
 nnoremap <leader>f :Rg<CR>
@@ -66,7 +67,6 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " Use `[g` and `]g` to navigate diagnostics
-" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 

@@ -13,6 +13,8 @@ set incsearch
 set splitbelow
 set termwinsize=15x0
 set colorcolumn=100
+set backupdir^=$HOME/.vim/tmp//
+set directory^=$HOME/.vim/tmp//
 
 "Marker line to switch to the next line
 highlight ColorColumn ctermbg=0 guibg=lightgrey

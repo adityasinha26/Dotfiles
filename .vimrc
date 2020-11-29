@@ -11,7 +11,6 @@ set ignorecase
 set smartcase
 set incsearch
 set splitbelow
-set termwinsize=15x0
 set colorcolumn=100
 set backupdir^=$HOME/.vim/tmp//
 set directory^=$HOME/.vim/tmp//
@@ -27,6 +26,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " File and Keyword fuzzy search
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 
 " Git
 Plug 'tpope/vim-fugitive' 
@@ -34,6 +34,9 @@ Plug 'tpope/vim-fugitive'
 " Cosmetics
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
+
+" Comments
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
@@ -47,7 +50,6 @@ nnoremap <C-l> <C-w>l
 nnoremap <C-j> <C-W>j
 
 let mapleader = " "
-nnoremap <leader>t :term<CR>
 nnoremap <leader>o :Files<CR>
 nnoremap <leader>f :Rg<CR>
 
@@ -92,4 +94,3 @@ function! s:show_documentation()
 endfunction
 
 nmap <leader>rn <Plug>(coc-rename)
-

@@ -3,10 +3,20 @@
 	email = aditya.sinha@zomato.com
 [alias]
 	graph = log --all --graph --decorate --oneline
+    lo = log --oneline
+    f = fetch
 	s = status
+    c = commit
+    ca = commit --amend
 	co = checkout
+    cm = checkout master
 	sl = stash list
 	sa = stash apply
 	p = push
+    rh = reset --hard
     pr = pull --rebase
 	przom = pull --rebase zomato-origin master
+    b = branch
+    bd = branch -D
+    a = add
+    rv = remote -v

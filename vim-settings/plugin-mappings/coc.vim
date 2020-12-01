@@ -1,3 +1,6 @@
+" File structure explorer
+nmap <leader>e :CocCommand explorer<CR>
+
 " Copied form the coc.nvim github page verbatim
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :

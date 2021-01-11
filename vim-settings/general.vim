@@ -11,7 +11,8 @@ set nowrap
 set ignorecase
 set smartcase
 set incsearch
-set splitbelow
+set nohlsearch
+set scrolloff=8
 set colorcolumn=100
 set backupdir^=$HOME/.vim/tmp//
 set directory^=$HOME/.vim/tmp//

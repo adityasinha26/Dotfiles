@@ -1,10 +1,10 @@
-set nocompatible
-syntax on
-
 set noerrorbells
-set tabstop=4 shiftwidth=4 expandtab
-set hidden
+set tabstop=4 softtabstop=4 
+set shiftwidth=4
+set expandtab
+set smartindent
 set smarttab
+set hidden
 set number
 set relativenumber
 set nowrap
@@ -14,8 +14,8 @@ set incsearch
 set nohlsearch
 set scrolloff=8
 set colorcolumn=100
-set backupdir^=$HOME/.vim/tmp//
-set directory^=$HOME/.vim/tmp//
+set nobackup
+set noswapfile
 set clipboard+=unnamedplus
 
 "Marker line to switch to the next line

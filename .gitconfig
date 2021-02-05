@@ -2,7 +2,6 @@
     name = adityasinha26
     email = aditya.sinha@zomato.com
 [alias]
-    graph = log --all --graph --decorate --oneline
     lo = log --oneline
     f = fetch
     s = status

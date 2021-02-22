@@ -11,6 +11,7 @@
     cm = checkout master
     sl = stash list
     sa = stash apply
+    sp = stash pop
     p = push
     rh = reset --hard
     pr = pull --rebase
@@ -19,3 +20,7 @@
     bd = branch -D
     a = add
     rv = remote -v
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false

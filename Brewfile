@@ -1,29 +1,35 @@
+tap "adoptopenjdk/openjdk"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Platform built on V8 to build network applications
 brew "node"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Display and control your Android device
+brew "scrcpy"
 # Code-search similar to ack
 brew "the_silver_searcher"
 # Terminal multiplexer
 brew "tmux"
+# AdoptOpenJDK OpenJDK (Java) Development Kit
+cask "adoptopenjdk8"
 # Tools for building Android applications
 cask "android-studio"
 # Web debugging Proxy application
 cask "charles"
 # App to build and share containerized applications and microservices
 cask "docker"
+cask "figma"
 # Web browser
 cask "firefox"
 cask "font-fira-code"

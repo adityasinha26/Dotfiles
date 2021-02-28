@@ -25,6 +25,8 @@ brew "tmux"
 cask "adoptopenjdk8"
 # Tools for building Android applications
 cask "android-studio"
+# Markdown editor for developers
+cask "boostnote"
 # Web debugging Proxy application
 cask "charles"
 # App to build and share containerized applications and microservices

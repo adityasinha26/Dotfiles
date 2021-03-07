@@ -9,6 +9,8 @@ brew "bat"
 brew "python@3.9"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Distributed revision control system
+brew "git"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Platform built on V8 to build network applications
@@ -27,13 +29,13 @@ cask "adoptopenjdk8"
 cask "android-studio"
 # Markdown note editor for developers
 cask "boost-note"
+# Web browser focusing on privacy
+cask "brave-browser"
 # Web debugging Proxy application
 cask "charles"
 # App to build and share containerized applications and microservices
 cask "docker"
 cask "figma"
-# Web browser
-cask "firefox"
 cask "font-fira-code"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"

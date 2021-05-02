@@ -17,3 +17,6 @@ alias rm="rm -i"
 # Required for colours to accurately come within tmux session
 export TERM=xterm-256color
 
+# llvm added to path at start to run code diagnostics and code completion in
+# nvim
+export PATH="/usr/local/opt/llvm/bin:$PATH"

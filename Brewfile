@@ -1,30 +1,31 @@
-tap "adoptopenjdk/openjdk"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
+# Cross-platform make
+brew "cmake"
+# Dependency manager for Cocoa projects
+brew "cocoapods"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# GNU compiler collection
+brew "gcc"
 # Distributed revision control system
 brew "git"
+# Package manager for the Lua programming language
+brew "luarocks"
 # Ambitious Vim-fork focused on extensibility and agility
-brew "neovim"
+brew "neovim", args: ["HEAD"]
 # Platform built on V8 to build network applications
 brew "node"
-# Search tool like grep and The Silver Searcher
-brew "ripgrep"
-# Display and control your Android device
-brew "scrcpy"
-# Code-search similar to ack
-brew "the_silver_searcher"
+# Manage compile and link flags for libraries
+brew "pkg-config"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Terminal multiplexer
 brew "tmux"
-# AdoptOpenJDK OpenJDK (Java) Development Kit
-cask "adoptopenjdk8"
 # Tools for building Android applications
 cask "android-studio"
 # Markdown note editor for developers
@@ -35,13 +36,11 @@ cask "brave-browser"
 cask "charles"
 # App to build and share containerized applications and microservices
 cask "docker"
-cask "figma"
-cask "font-fira-code"
+# UI toolkit for building applications for mobile, web and desktop
+cask "flutter"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Collaboration platform for API development
 cask "postman"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
-# Team communication and collaboration software
-cask "slack"

@@ -13,7 +13,7 @@ set smartcase
 set incsearch
 set nohlsearch
 set scrolloff=8
-set colorcolumn=100
+set colorcolumn=80
 set nobackup
 set noswapfile
 set clipboard+=unnamedplus

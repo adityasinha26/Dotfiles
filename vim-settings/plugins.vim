@@ -20,9 +20,6 @@ Plug 'morhetz/gruvbox'
 " Comments
 Plug 'tpope/vim-commentary'
 
-" Php-Refactoring
-Plug 'adoy/vim-php-refactoring-toolbox'
-
 " Autosave
 Plug '907th/vim-auto-save'
 

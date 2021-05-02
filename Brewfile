@@ -38,6 +38,8 @@ cask "charles"
 cask "docker"
 # UI toolkit for building applications for mobile, web and desktop
 cask "flutter"
+# Web browser
+cask "google-chrome"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Collaboration platform for API development

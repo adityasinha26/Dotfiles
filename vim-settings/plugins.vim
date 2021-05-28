@@ -1,14 +1,16 @@
 call plug#begin('~/.vim/plugged')
 
-" Code Completion and LSP
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Fuzzy Search and more
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
-" File and Keyword fuzzy search
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+" Language Server Protocol
+Plug 'neovim/nvim-lspconfig'
 
-" Fuzzy coc references search
-Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
+" Code Completion
+Plug 'hrsh7th/nvim-compe'
+Plug 'norcalli/snippets.nvim'
 
 " Git
 Plug 'tpope/vim-fugitive' 

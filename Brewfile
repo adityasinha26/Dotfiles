@@ -26,12 +26,12 @@ brew "neovim", args: ["HEAD"]
 brew "node"
 # Manage compile and link flags for libraries
 brew "pkg-config"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Terminal multiplexer
 brew "tmux"
 # Tools for building Android applications
 cask "android-studio"
-# Markdown note editor for developers
-cask "boost-note"
 # Web browser focusing on privacy
 cask "brave-browser"
 # Web debugging Proxy application
@@ -44,6 +44,8 @@ cask "flutter"
 cask "google-chrome"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Note taking and to-do application with synchronization capabilities
+cask "joplin"
 # Keyboard customizer
 cask "karabiner-elements"
 # Collaboration platform for API development

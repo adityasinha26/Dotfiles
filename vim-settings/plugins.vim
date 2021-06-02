@@ -19,6 +19,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
 
+" File Explorer
+Plug 'preservim/nerdtree'
+
 " Comments
 Plug 'tpope/vim-commentary'
 

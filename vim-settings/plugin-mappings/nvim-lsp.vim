@@ -87,18 +87,18 @@ vim.api.nvim_set_keymap("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 
 -- Snippet Integration
-require'snippets'.use_suggested_mappings()
+--require'snippets'.use_suggested_mappings()
 
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities.textDocument.completion.completionItem.snippetSupport = true;
+--local capabilities = vim.lsp.protocol.make_client_capabilities()
+--capabilities.textDocument.completion.completionItem.snippetSupport = true;
 
 
 -- Final LSP Configuration
 local nvim_lsp = require('lspconfig')
-local servers = { "clangd", "intelephense" }
+local servers = { "clangd", "intelephense", "gopls" }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup { 
-    capabilities = capabilities,
+ --   capabilities = capabilities,
   }
 end
 

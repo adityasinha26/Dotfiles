@@ -20,3 +20,7 @@ export TERM=xterm-256color
 # llvm added to path at start to run code diagnostics and code completion in
 # nvim
 export PATH="/usr/local/opt/llvm/bin:$PATH"
+
+# Add GOPATH to PATH
+export GOPATH=$HOME/go
+export PATH="$GOPATH/bin:$PATH"

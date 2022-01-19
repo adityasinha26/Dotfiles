@@ -1,5 +1,5 @@
 # Requires Oh My ZSH to be installed
-export ZSH="/Users/addy/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 # Requires Spaceship theme to be installed via Oh My ZSH
 ZSH_THEME="spaceship"
 
@@ -24,3 +24,10 @@ export PATH="/usr/local/opt/llvm/bin:$PATH"
 # Add GOPATH to PATH
 export GOPATH=$HOME/go
 export PATH="$GOPATH/bin:$PATH"
+
+# make CapsLock behave like Ctrl:
+setxkbmap -option ctrl:nocaps
+
+# make short-pressed Ctrl behave like Escape:
+xcape -e 'Control_L=Escape'
+

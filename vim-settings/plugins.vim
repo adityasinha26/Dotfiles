@@ -10,7 +10,7 @@ Plug 'neovim/nvim-lspconfig'
 
 " Code Completion
 Plug 'hrsh7th/nvim-compe'
-Plug 'norcalli/snippets.nvim'
+" Plug 'norcalli/snippets.nvim'
 
 " Git
 Plug 'tpope/vim-fugitive' 

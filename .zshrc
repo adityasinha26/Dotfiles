@@ -11,9 +11,6 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 alias rm="rm -i"
 
-# Required by FZF to work also run the command in fzf repo for key bindings 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # Required for colours to accurately come within tmux session
 export TERM=xterm-256color
 
@@ -27,7 +24,10 @@ export PATH="$GOPATH/bin:$PATH"
 
 # make CapsLock behave like Ctrl:
 setxkbmap -option ctrl:nocaps
-
 # make short-pressed Ctrl behave like Escape:
 xcape -e 'Control_L=Escape'
+
+# FZF Key bindings and completion
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/doc/fzf/examples/completion.zsh
 

@@ -33,15 +33,15 @@ augroup END
 
 
 " Hack to use system clipboard for yanking and pasting
-function! ClipboardYank()
-  call system('xclip -i -selection clipboard', @@)
-endfunction
-function! ClipboardPaste()
-  let @@ = system('xclip -o -selection clipboard')
-endfunction
+" function! ClipboardYank()
+"   call system('xclip -i -selection clipboard', @@)
+" endfunction
+" function! ClipboardPaste()
+"   let @@ = system('xclip -o -selection clipboard')
+" endfunction
 
-vnoremap <silent> y y:call ClipboardYank()<cr>
-vnoremap <silent> d d:call ClipboardYank()<cr>
-nnoremap <silent> yy yy:call ClipboardYank()<cr>
-nnoremap <silent> dd dd:call ClipboardYank()<cr>
-nnoremap <silent> p :call ClipboardPaste()<cr>p
+" vnoremap <silent> y y:call ClipboardYank()<cr>
+" vnoremap <silent> d d:call ClipboardYank()<cr>
+" nnoremap <silent> yy yy:call ClipboardYank()<cr>
+" nnoremap <silent> dd dd:call ClipboardYank()<cr>
+" nnoremap <silent> p :call ClipboardPaste()<cr>p

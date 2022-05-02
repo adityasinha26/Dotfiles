@@ -28,4 +28,8 @@ Plug 'tpope/vim-commentary'
 " Autosave
 Plug '907th/vim-auto-save'
 
+" Debugger
+Plug 'mfussenegger/nvim-dap'
+Plug 'rcarriga/nvim-dap-ui'
+
 call plug#end()

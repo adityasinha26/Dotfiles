@@ -3,7 +3,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Requires Spaceship theme to be installed via Oh My ZSH
 ZSH_THEME="spaceship"
 
-plugins=(zsh-autosuggestions)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 

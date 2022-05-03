@@ -25,4 +25,4 @@
 [difftool]
 	prompt = false
 [core]
-	editor = /usr/local/bin/nvim
+	editor = /usr/bin/nvim

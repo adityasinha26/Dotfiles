@@ -16,6 +16,7 @@ set scrolloff=8
 set colorcolumn=80
 set nobackup
 set noswapfile
+set mouse=a
 
 " On ubuntu we need 'xclip' - https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim
 set clipboard+=unnamedplus

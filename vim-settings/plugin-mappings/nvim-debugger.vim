@@ -16,6 +16,13 @@ dap.configurations.cpp = {
     program = "${workspaceFolder}/a.out",
     cwd = '${workspaceFolder}',
     stopOnEntry = true,
+    setupCommands = {  
+        { 
+            text = '-enable-pretty-printing',
+            description =  'enable pretty printing',
+            ignoreFailures = false 
+        },
+    },
   },
 }
 
@@ -25,7 +32,17 @@ dap.adapters.php = {
   args = { '/home/aditya/Desktop/repos/debuggers/vscode-php-debug/out/phpDebug.js' }
 }
 
-require('dap.ext.vscode').load_launchjs("/home/aditya/Desktop/repos/phpapp/launch.json", { php = {'php'} })
+dap.configurations.php = {
+  {
+    type = 'php',
+    request = 'launch',
+    name = 'Listen for Xdebug',
+    port = 9003,
+    pathMappings = {
+        ['/demo/'] = "${workspaceFolder}", 
+    },
+  }
+}
 
 EOF
 

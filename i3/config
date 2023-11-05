@@ -200,7 +200,7 @@ exec firefox
 exec obsidian
 exec spotify
 
-# Commands to be everytime i3 window is loaded
+# Commands to be run everytime i3 window is loaded
 exec_always feh --bg-fill ~/Pictures/wallpaper.jpg
 
 # Screenshots

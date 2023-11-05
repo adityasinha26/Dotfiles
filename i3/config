@@ -109,7 +109,7 @@ set $ws1 "1: "
 set $ws2 "2: "
 set $ws3 "3: "
 set $ws4 "4"
-set $ws5 "5"
+set $ws5 "5: ♫"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -185,18 +185,30 @@ bar {
 ########################################
 
 # Shortcut to lock my desktop
-bindsym $mod+Shift+x exec i3lock --image ~/Pictures/lockscreen.png
+bindsym $mod+Shift+x exec i3lock --image ~/Pictures/lockscreen2.png
 
 # Assigning applications to appropirate workspace
-assign [class="Brave-browser"] $ws1
-assign [class="Joplin"] $ws3
+assign [class="firefox"] $ws1
+assign [class="obsidian"] $ws3
+assign [class="Spotify"] $ws5
 
 # Open termianl once on login on ws2 and move to ws1
 exec --no-startup-id i3-msg 'workspace $ws2; exec gnome-terminal; workspace $ws1'
 
 # Commands to be run everytime I log in
-exec brave-browser
-exec joplin
+exec firefox
+exec obsidian
+exec spotify
 
 # Commands to be everytime i3 window is loaded
 exec_always feh --bg-fill ~/Pictures/wallpaper.jpg
+
+# Screenshots
+bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
+bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
+bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
+
+## Clipboard Screenshots
+bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
+bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png

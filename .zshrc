@@ -10,6 +10,7 @@ source $ZSH/oh-my-zsh.sh
 # Common shell alias
 alias vim="nvim"
 alias rm="rm -i"
+alias open="xdg-open"
 
 # Required for colours to accurately come within tmux session
 export TERM=xterm-256color

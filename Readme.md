@@ -4,6 +4,6 @@ Bare minimum set up on a new computer.
 ```
 ln -s ~/Dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Dotfiles/.tmux.conf ~/.tmux.conf
-ln -s ~/Dotfiles/.init.lua ~/.config/nvim/init.lua
+ln -s ~/Dotfiles/init.lua ~/.config/nvim/init.lua
 ```
 2. Install neovim
